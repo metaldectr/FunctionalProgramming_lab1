@@ -1,12 +1,8 @@
 (ns com.romario.fplab1.main.main
-  (:require [com.romario.fplab1.file.file-manager :as logic])
+  (:require [com.romario.fplab1.file.cluster_estimation :as logic])
   (:gen-class))
 
 (def filePath "./src/com/romario/fplab1/resources/glass.data.txt")
-
-(defn doubler [f] (fn [& args] (* 2 (apply f args))))
-
-(def doubler-+ (doubler +))
 
 (defn -main [& args]
   (prn "Start lab!")
